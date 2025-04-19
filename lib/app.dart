@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:neat_roots_5_project/Counter_App/counter_app.dart';
 import 'First App/first_app.dart';
 
 class MyApp extends StatelessWidget {
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue
       ),
-      home: const FirstApp(),
+      home: const CounterApp(),
     );
   }
 }
