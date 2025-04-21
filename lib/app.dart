@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: Colors.deepPurple,
+        visualDensity: VisualDensity.adaptivePlatformDensity
       ),
       home: MemeHomePage(),
     );

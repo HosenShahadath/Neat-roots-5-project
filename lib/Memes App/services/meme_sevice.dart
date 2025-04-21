@@ -21,7 +21,7 @@ class MemeService {
     } catch (e) {
       ScaffoldMessenger.of(
         context,
-      ).showSnackBar(SnackBar(content: Text('Error to memes')));
+      ).showSnackBar(SnackBar(content: Text('Error load to memes')));
     }
   }
 }
