@@ -27,6 +27,13 @@ class _HomePageState extends State<HomePage> {
     super.initState();
   }
 
+  void deleteTask(int index){
+    setState(() {
+      db.todoList.removeAt(index);
+    });
+    db.updateDataBase();
+  }
+
   void checkBoxChanged(bool? value, int index) {
     setState(() {
       db.todoList[index][1] = !db.todoList[index][1];
@@ -76,6 +83,7 @@ class _HomePageState extends State<HomePage> {
             onChanged: (value) {
               checkBoxChanged(value, index);
             },
+            onPressed: (context) => deleteTask(index),
           );
         },
         itemCount: db.todoList.length,
