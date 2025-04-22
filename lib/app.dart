@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'Memes App/screen/meme_home_page.dart';
+import 'package:neat_roots_5_project/Dice%20App/dice_screen.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.deepPurple,
         visualDensity: VisualDensity.adaptivePlatformDensity
       ),
-      home: MemeHomePage(),
+      home: DiceScreen(),
     );
   }
 }
