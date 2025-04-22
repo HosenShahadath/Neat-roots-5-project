@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:neat_roots_5_project/Calculator%20App/calculator_screen.dart';
-import 'package:neat_roots_5_project/Dice%20App/dice_screen.dart';
+import 'package:neat_roots_5_project/Todo%20App/home_page.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -10,10 +9,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: Colors.deepPurple,
+        primaryColor: Colors.purple,
         visualDensity: VisualDensity.adaptivePlatformDensity
       ),
-      home: const CalculatorScreen(),
+      home: HomePage(),
     );
   }
 }
