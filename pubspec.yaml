@@ -41,7 +41,7 @@ dependencies:
   hive: ^2.2.3
   flutter_slidable: ^4.0.0
   provider: ^6.1.4
-  lottie: ^3.3.1
+  lottie: ^3.0.0
   intl: ^0.20.2
 
 dev_dependencies:
@@ -76,6 +76,10 @@ flutter:
     - assets/dice-4.png
     - assets/dice-5.png
     - assets/dice-6.png
+    - assets/cloudy.json
+    - assets/rain.json
+    - assets/snowfall.json
+    - assets/sunny.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
