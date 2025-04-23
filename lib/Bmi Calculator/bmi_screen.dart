@@ -12,8 +12,8 @@ class _BmiScreenState extends State<BmiScreen> {
   final TextEditingController heightController = TextEditingController();
   final TextEditingController weightController = TextEditingController();
 
-  double? bmi;
-  String category = '';
+  double bmi = 0;
+  String category = 'Enter All Input';
   String gender = 'Male';
 
   void calculateBmi() {
@@ -23,11 +23,11 @@ class _BmiScreenState extends State<BmiScreen> {
     setState(() {
       bmi = weight / pow(height, 2);
 
-      if (bmi! < 18.5) {
+      if (bmi < 18.5) {
         category = 'Underweight';
-      } else if (bmi! >= 18.5 && bmi! < 24.9) {
+      } else if (bmi >= 18.5 && bmi < 24.9) {
         category = 'Normal';
-      } else if (bmi! >= 25 && bmi! < 29.9) {
+      } else if (bmi >= 25 && bmi < 29.9) {
         category = 'Overweight';
       } else {
         category = 'Obese';
@@ -201,30 +201,13 @@ class _BmiScreenState extends State<BmiScreen> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(
-              'Your Bmi : ${bmi!.toStringAsFixed(2)}',
-              style: const TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 24,
-                color: Colors.deepPurple,
-              ),
+              'Bmi : ${bmi.toStringAsFixed(2)}'
             ),
-            const SizedBox(height: 10,),
             Text(
-              'Your Bmi : $category',
-              style: const TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 24,
-                color: Colors.deepPurple,
-              ),
+                'Category : $category'
             ),
-            const SizedBox(height: 10,),
             Text(
-              'Your Bmi : $gender',
-              style: const TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 24,
-                color: Colors.deepPurple,
-              ),
+                'Gender : $gender'
             ),
           ],
         ),
