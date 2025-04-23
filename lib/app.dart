@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:neat_roots_5_project/Todo%20App/home_page.dart';
+import 'package:neat_roots_5_project/Weather%20App/screens/home_screen.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.purple,
         visualDensity: VisualDensity.adaptivePlatformDensity
       ),
+      home: HomeScreen(),
     );
   }
 }
