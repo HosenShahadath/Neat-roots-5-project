@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:neat_roots_5_project/Weather%20App/models/weather_model.dart';
 import 'package:neat_roots_5_project/Weather%20App/services/weather_service.dart';
+import 'package:neat_roots_5_project/Weather%20App/widgets/weather_card.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -111,8 +112,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     child: CircularProgressIndicator(color: Colors.white),
                   ),
 
-                if(_weather != null)
-                  
+                if (_weather != null) WeatherCard(weather: _weather!),
               ],
             ),
           ),
